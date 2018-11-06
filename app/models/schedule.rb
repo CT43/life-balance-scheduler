@@ -1,11 +1,10 @@
 class Schedule < ApplicationRecord
-  has_secure_password
 
-  has_many :schedules
-  has_many :activities, through: :schedules
-  has_many :categories
-  has_many :time_views
+  has_many :activities
+   accepts_nested_attributes_for :activities
+   accepts_nested_attributes_for :user
+  belongs_to :user
+  belongs_to :time_view, required: false
+  has_many :categories, through: :user
 
-  validates :email, uniqueness: true
-  validates :name, presence: true
 end
