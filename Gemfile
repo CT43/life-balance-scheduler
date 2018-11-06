@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.3.3'
 
 gem 'foreman', '~> 0.82.0'
-gem 'pry'
 gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
 gem 'bootstrap-sass', '3.3.7'
