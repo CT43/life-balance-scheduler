@@ -5,6 +5,21 @@ ruby '2.3.3'
 
 gem 'foreman', '~> 0.82.0'
 gem 'pry'
+gem 'bcrypt', '~> 3.1.7'
+gem 'pry'
+gem 'bootstrap-sass', '3.3.7'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'dotenv-rails'
+gem 'jquery-rails'
+gem 'coffee-rails', '~> 4.2'
+
+gem 'jbuilder', '~> 2.5'
+
+gem 'bootsnap', '>= 1.1.0', require: false
+gem 'pg'
+gem 'active_model_serializers', '~> 0.10.0'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
@@ -17,7 +32,6 @@ gem 'puma', '~> 3.11'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -37,6 +51,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'web-console', '>= 3.3.0'
+
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
